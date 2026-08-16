@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3 Years of Us ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:ital,wght@500;600&display=swap');
+:root{--wine:#3a0719;--wine2:#64102f;--cream:#fff7f1;--rose:#e9aeb7;--gold:#d6ab72;--ink:#3b1521}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Cairo,Arial,sans-serif;overflow-x:hidden}
+button,input{font:inherit}.hidden{display:none}.center{text-align:center}.serif{font-family:"Playfair Display",serif}
+#lock{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 20% 15%,#9c2d54 0 2px,transparent 3px),radial-gradient(circle at 80% 75%,#d18a9c 0 2px,transparent 3px),linear-gradient(145deg,#17030b,#5a0b29);background-size:120px 120px,160px 160px,auto;color:#fff;padding:24px;position:fixed;inset:0;z-index:100}
+.lock-card{width:min(500px,100%);padding:42px 28px;border:1px solid #c58a9a;border-radius:25px;text-align:center;background:#3b0718dd;box-shadow:0 30px 90px #0008;backdrop-filter:blur(10px)}
+.lock-card .heart{font-size:54px}.lock-card h1{font-family:"Playfair Display",serif;font-size:34px;margin:8px 0}.lock-card p{opacity:.8}
+#password{width:100%;padding:15px;border-radius:12px;border:1px solid #b8788c;background:#21030d;color:#fff;text-align:center;outline:0}
+.enter{width:100%;margin-top:12px;padding:14px;border:0;border-radius:12px;background:linear-gradient(90deg,#d5a56c,#f0ca9b);color:#3a0719;font-weight:700;cursor:pointer}
+#error{height:24px;color:#ffb7c4;font-size:13px;margin-top:7px}
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:35px;padding:70px 7%;background:linear-gradient(180deg,#fff9f5,#f6ded7);position:relative;overflow:hidden}
+.hero:before{content:"♥";position:absolute;right:-70px;top:-110px;font-size:420px;color:#f0bfc5;opacity:.16;transform:rotate(20deg)}
+.hero-copy{position:relative;z-index:2}.eyebrow{color:#8c2c4a;font-weight:700;letter-spacing:.4px}.hero h2{font-family:"Playfair Display",serif;font-size:clamp(48px,7vw,86px);line-height:.98;margin:12px 0;color:#3b0719}.hero h2 em{display:block;font-size:.55em;color:#7d2845}.hero p{line-height:2;font-size:17px}.hero .lead{font-family:"Playfair Display",serif;font-size:27px;color:#7d2845}
+.btn{display:inline-block;text-decoration:none;padding:14px 23px;border-radius:12px;background:var(--wine);color:#fff;margin-top:10px;box-shadow:0 10px 25px #3a071933}
+.photo-wrap{position:relative;max-width:460px;margin:auto;z-index:2}.photo-wrap img{width:100%;aspect-ratio:4/5;object-fit:cover;border:13px solid white;box-shadow:0 25px 60px #3a071933;transform:rotate(3deg)}.tag{position:absolute;z-index:3;left:-20px;top:15px;background:#fff;padding:12px 16px;box-shadow:0 8px 25px #0002;transform:rotate(-7deg);font-family:"Playfair Display",serif;color:#6e2039}
+.floating span{position:absolute;bottom:-50px;color:#a13b5b;opacity:.25;animation:up 8s linear infinite;z-index:1}.floating span:nth-child(1){left:10%;animation-delay:0s}.floating span:nth-child(2){left:25%;animation-delay:2s;font-size:35px}.floating span:nth-child(3){left:47%;animation-delay:4s}.floating span:nth-child(4){left:70%;animation-delay:1s;font-size:40px}.floating span:nth-child(5){left:88%;animation-delay:3s}@keyframes up{to{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+section{padding:85px 6%}.dark{background:linear-gradient(145deg,#320514,#650e30);color:#fff}.section-title{font-family:"Playfair Display",serif;font-size:43px;margin:0 0 42px}.sub{opacity:.75;text-align:center;margin-top:-28px;margin-bottom:38px}
+.timeline{max-width:1050px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.year{padding:25px 17px;border-top:1px solid #d6ab72;text-align:center}.year .num{font-family:"Playfair Display",serif;font-size:38px;color:#f0cd99}.year h3{color:#f2cfa1}.year p{font-size:14px;line-height:1.9;color:#f7e3e7}
+.gallery{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.gallery figure{margin:0;background:#fff;padding:10px 10px 18px;box-shadow:0 12px 28px #3a071918;transform:rotate(-2deg)}.gallery figure:nth-child(2){transform:rotate(2deg)}.gallery figure:nth-child(3){transform:rotate(-1deg)}.gallery figure:nth-child(4){transform:rotate(3deg)}.gallery figure:nth-child(5){transform:rotate(-3deg)}.gallery figure:nth-child(6){transform:rotate(1deg)}.gallery figure:nth-child(1),.gallery figure:nth-child(4){grid-column:span 4}.gallery figure:nth-child(2),.gallery figure:nth-child(3),.gallery figure:nth-child(5),.gallery figure:nth-child(6){grid-column:span 4}.gallery img{width:100%;height:310px;object-fit:cover}.gallery figcaption{text-align:center;font-family:"Playfair Display",serif;color:#76243f;margin-top:9px}
+.reasons{max-width:1050px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.reason{background:#fff7f1;color:#4a1a28;border-radius:18px;padding:25px;text-align:center;box-shadow:0 10px 25px #0002}.reason .ico{font-size:30px}.reason p{line-height:1.9;margin-bottom:0}
+.letter{max-width:860px;margin:auto;background:#fff;border-radius:24px;padding:40px 34px;box-shadow:0 18px 45px #3a071918;line-height:2.25;font-size:17px}.signature{text-align:left;font-family:"Playfair Display",serif;font-style:italic;font-size:28px;color:#8c2c4a;margin-top:25px}
+#surprise{min-height:100vh;background:radial-gradient(circle at 20% 20%,#8b1b46 0 2px,transparent 3px),linear-gradient(145deg,#18030b,#650d30);background-size:100px 100px,auto;display:flex;align-items:center;justify-content:center;color:#fff;text-align:center;position:relative;overflow:hidden}.surprise-box{max-width:760px;width:100%}.whisper{font-family:"Playfair Display",serif;font-size:20px;color:#f2d1a1}.surprise h2{font-family:"Playfair Display",serif;font-size:clamp(42px,6vw,66px);margin:10px 0}.date-card{max-width:600px;margin:25px auto;background:#fff7f1;color:#3a0719;border-radius:22px;padding:27px;text-align:right;box-shadow:0 25px 60px #0006}.date-card h3{text-align:center;font-family:"Playfair Display",serif;font-size:26px}.date-card div{padding:10px 0;border-bottom:1px solid #ead8d0}.choices{height:110px;display:flex;justify-content:center;align-items:center;gap:20px;position:relative}.yes,.no{border-radius:14px;padding:14px 38px;cursor:pointer;font-size:20px}.yes{border:0;background:#ff4f87;color:#fff;box-shadow:0 0 30px #ff4f8755}.no{background:transparent;color:#fff;border:1px solid #d6ab72;position:relative}.result{min-height:58px;font-family:"Playfair Display",serif;font-size:38px;color:#ffd99e}
+.music{position:fixed;bottom:18px;left:18px;z-index:80;width:52px;height:52px;border:0;border-radius:50%;background:#3a0719;color:#fff;box-shadow:0 10px 25px #0004;cursor:pointer}
+.conf{position:fixed;top:-30px;z-index:120;pointer-events:none;font-size:22px;animation:drop 2.7s linear forwards}@keyframes drop{to{transform:translateY(110vh) rotate(700deg);opacity:0}}
+footer{padding:28px;text-align:center;background:#20030b;color:#f1d9df}
+.fade{animation:fade .9s ease both}@keyframes fade{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding:60px 22px}.hero-copy{text-align:center}.photo-wrap{max-width:340px}.timeline{grid-template-columns:1fr 1fr}.gallery{display:grid;grid-template-columns:1fr 1fr}.gallery figure,.gallery figure:nth-child(n){grid-column:auto}.gallery img{height:240px}.reasons{grid-template-columns:1fr}.section-title{font-size:35px}.letter{font-size:15px;padding:28px 22px}}
+</style>
+</head>
+<body>
+<div id="lock">
+<div class="lock-card">
+<div class="heart">🔐</div>
+<h1>Just for you, Ahmed ❤️</h1>
+<p>في حاجة صغيرة مستنياك جوّه...</p>
+<input id="password" type="password" placeholder="Password">
+<button class="enter" onclick="unlock()">ENTER ❤️</button>
+<div id="error"></div>
+<small>Only you have the key 🔑</small>
+</div>
+</div>
+<audio id="bgMusic" src="music.mp3" preload="auto" loop></audio>
+<button class="music hidden" id="musicBtn" onclick="toggleMusic()">🎵</button>
+<main id="site" class="hidden">
+<section class="hero">
+<div class="floating" aria-hidden="true"><span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span></div>
+<div class="hero-copy fade">
+<div class="eyebrow">Happy Anniversary • 18/8 ❤️</div>
+<h2>To my favorite <em>person in the world</em><span style="display:block;font-size:.42em;color:#8c2c4a;margin-top:12px">Ahmed ❤️</span></h2>
+<p class="lead">بقالنا ٣ سنين في وش بعض 😂</p>
+<p>وطبعًا دي أحلى حاجة حصلت في حياتك…<br><b>يا بختك بيا 😜😂</b></p>
+<a class="btn" href="#story">ENTER OUR STORY ❤️</a>
+</div>
+<div class="photo-wrap fade"><div class="tag">3 years • countless memories</div><img src="memory1.jpg" alt="Our memory"></div>
+</section>
+<section id="story" class="dark">
+<h2 class="section-title center">♥ Our 3 Years ♥</h2>
+<p class="sub">من أول الحكاية لحد أجمل حاجة كملت بيتنا ❤️</p>
+<div class="timeline">
+<div class="year"><div class="num">01</div><h3>البداية</h3><p>أول خطوة في الحكاية اللي ماكناش نعرف إنها هتبقى عمر كامل.</p></div>
+<div class="year"><div class="num">02</div><h3>بقى إحنا</h3><p>ضحك، خناقات صغيرة، أكل كتير، وذكريات أكتر… وكل يوم بنختار بعض.</p></div>
+<div class="year"><div class="num">03</div><h3>بيت وحياة</h3><p>كبرت الحكاية وبقينا عيلة، والحب بقى له شكل جديد أجمل.</p></div>
+<div class="year"><div class="num">∞</div><h3>And forever</h3><p>والأحلى لسه جاي… بإذن الله وإحنا سوا ❤️</p></div>
+</div>
+</section>
+<section>
+<h2 class="section-title center">♥ Our Memories ♥</h2>
+<p class="sub">شوية من الذكريات اللي نفسي أفضل أعيشها معاك كل سنة.</p>
+<div class="gallery">
+<figure><img src="memory2.jpg" alt=""><figcaption>Us ❤️</figcaption></figure>
+<figure><img src="memory3.jpg" alt=""><figcaption>One of my favorites</figcaption></figure>
+<figure><img src="memory4.jpg" alt=""><figcaption>Still us</figcaption></figure>
+<figure><img src="memory5.jpg" alt=""><figcaption>Our little world</figcaption></figure>
+<figure><img src="memory6.jpg" alt=""><figcaption>Home is you</figcaption></figure>
+<figure><img src="memory7.jpg" alt=""><figcaption>And then came our little one ❤️</figcaption></figure>
+</div>
+</section>
+<section class="dark">
+<h2 class="section-title center">♥ Why You? ♥</h2>
+<div class="reasons">
+<div class="reason"><div class="ico">👨‍👩‍👦</div><p>أحن أب ليا وليه ❤️</p></div>
+<div class="reason"><div class="ico">🤝</div><p>أجدع صاحب ممكن أطلبه.</p></div>
+<div class="reason"><div class="ico">💍</div><p>وأحن زوووج ❤️</p></div>
+<div class="reason"><div class="ico">😂</div><p>بتعمل الحاجة بعد ما يطلع عيني من الزن.</p></div>
+<div class="reason"><div class="ico">🍕</div><p>بناكل ونتخن سوااا 😂</p></div>
+<div class="reason"><div class="ico">💪</div><p>قدامك شهرين بالظبط وتعمل فورمة 😂</p></div>
+</div>
+</section>
+<section>
+<h2 class="section-title center">♥ From me to you ♥</h2>
+<div class="letter">
+<p>بس بجد، دي أحلى ٣ سنين، وربنا كمل حبنا بأحلى ولد في الدنيا. ربنا يحفظهولنا يارب ❤️</p>
+<p>أحب أقولك إنك أحن أب ليا وليه، وأجدع صاحب، وأحن زوووج ❤️</p>
+<p>كل سنة وانت مش بتعمل الحاجة غير بعد ما يطلع عيني من الزن 😂<br>
+كل سنة وإحنا بناكل ونتخن سوااا 😂<br>
+كل سنة وانت قدامك شهرين بالظبط وتعمل فورمة 💪😂<br>
+كل سنة وانت دايمًا مش عارف تنام مننا، وعاوز تتغطى في عز الحر 😂😂<br>
+كل سنة وانت بتنام بسرعة 😴😂</p>
+<p>كل عيد جواز وإنت يا أحمد يا حبيبي أحلى هدية ربنا بعتهالي، ومنوّر حياتنا.<br>بنحبك أوووي ❤️</p>
+<div class="signature">المتواضعة والمنوّرة حياتك،<br>ليلي ❤️<br><span style="font-size:18px">إلى أحمد، حبيبي وشريكي وأبو أحلى ولد ❤️</span></div>
+</div>
+</section>
+<section id="surprise">
+<div class="surprise-box">
+<div class="whisper">Psst… one last thing 👀</div>
+<h2>بما إنو عيد جوازنا… ❤️</h2>
+<p>فأنا بفكر أدبسك في احتفال صغير على قدنا يوم التلات 😂❤️</p>
+<p>هتلاقي التفاصيل تحت 👇</p>
+<div class="date-card">
+<h3>🥂 Dinner Date — 18/8</h3>
+<div>📅 <b>المعاد:</b> يوم التلات 18/8</div>
+<div>⏰ <b>التوقيت:</b> تخلص شغل… وتيجي جري 😂❤️</div>
+<div>👶 <b>الولد:</b> هسيبه مع ماما… وربنا يستر علينا 😂</div>
+<div>📍 <b>هنروح فين؟</b> مفاجأة 😏 — على حسابك طبعًا 😂😂</div>
+</div>
+<h2 style="font-size:34px">So… are you coming with me?</h2>
+<div class="choices">
+<button class="yes" onclick="sayYes()">YES ❤️</button>
+<button class="no" id="noBtn" onclick="runAway()" onmouseenter="runAway()">NO 🙈</button>
+</div>
+<div class="result" id="result"></div>
+</div>
+</section>
+<footer>Made with all my love for Ahmed ❤️ • 3 years and counting</footer>
+</main>
+<script>
+function unlock(){
+const p=document.getElementById('password').value.trim().toLowerCase();
+if(p==='younis'){
+const lock=document.getElementById('lock');
+lock.style.transition='opacity .9s ease'; lock.style.opacity='0';
+setTimeout(()=>{
+lock.classList.add('hidden'); document.getElementById('site').classList.remove('hidden');
+document.getElementById('musicBtn').classList.remove('hidden');
+const m=document.getElementById('bgMusic'); m.volume=.55; m.play().catch(()=>{});
+window.scrollTo(0,0);
+},900);
+}else document.getElementById('error').textContent='Hmm… جرّب تاني يا حبيبي ❤️';
+}
+document.getElementById('password').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});
+function toggleMusic(){const m=document.getElementById('bgMusic'),b=document.getElementById('musicBtn');if(m.paused){m.play();b.textContent='🎵'}else{m.pause();b.textContent='🔇'}}
+function runAway(){
+const b=document.getElementById('noBtn');
+const area=b.parentElement.getBoundingClientRect();
+const maxX=Math.max(90, area.width/2-45);
+const maxY=55;
+const x=(Math.random()*2-1)*maxX;
+const y=(Math.random()*2-1)*maxY;
+b.style.transform=`translate(${x}px,${y}px)`;
+}
+function sayYes(){
+document.getElementById('result').textContent='I KNEW IT! 😌❤️';
+for(let i=0;i<85;i++){let s=document.createElement('span');s.className='conf';s.textContent=['❤️','💗','💕','✨','🥂','♥'][Math.floor(Math.random()*6)];s.style.left=Math.random()*100+'vw';s.style.animationDelay=Math.random()*.8+'s';document.body.appendChild(s);setTimeout(()=>s.remove(),3300)}
+}
+</script>
+</body>
+</html>
